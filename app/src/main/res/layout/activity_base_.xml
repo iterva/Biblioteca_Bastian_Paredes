@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Base_act">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="193dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="48dp"
+        android:text="Gestión libros"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="347dp"
+        android:layout_height="244dp"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:ems="10"
+            android:hint="Ingrese código"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:ems="10"
+            android:hint="Ingrese nombre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:ems="10"
+            android:hint="Ingrese precio"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="354dp"
+        android:layout_height="219dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="52dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="AñadirLibro"
+            android:text="AÑADIR LIBRO" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ModificarLibro"
+            android:text="MODIFICAR LIBRO" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="EliminarLibro"
+            android:text="ELIMINAR LIBRO" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

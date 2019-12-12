@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import java.util.Map;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText et1, et2;
@@ -76,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(getBaseContext(), Home_act.class);
             startActivity(i);
         }
+
+
     }
 
 
@@ -84,7 +88,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+    public void mapas(View v)
+    {
+        Intent i = new Intent(this, MapsActivity.class);
+        startActivity(i);
+    }
     public void Home(View v)
     {
         Intent i = new Intent(this, Home_act.class);
